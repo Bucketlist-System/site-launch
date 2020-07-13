@@ -5,7 +5,7 @@ const config = {
   script:
     'https://script.google.com/macros/s/AKfycbx9XF_VGYdZQoALe4UH3TFyyVMsbENMPMVwp7ZORg/exec',
   sheet: 'Contact Form Responses',
-  email: 'chanpark93@gmail.com',
+  email: 'ryan.morimoto24@gmail.com',
 };
 
 const Thanks = ({ name }) => (
@@ -46,11 +46,11 @@ export default () => {
   const handleClick = (e) => {
     e.preventDefault();
     // loading
-    setState({ clicked: true });
+    setState({ ...state, clicked: true });
 
     //sent
     const setSent = () => {
-      setState({ sent: true });
+      setState({ ...state, sent: true });
     };
 
     // check if bot
