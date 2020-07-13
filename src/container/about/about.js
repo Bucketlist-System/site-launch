@@ -24,13 +24,15 @@ const About = () => {
       <div className={styles.mission}>
         <div className={styles.picture} />
         <div className={styles.info}>
-          <Subtitle>Mission</Subtitle>
-          <p>
-            There are complex problems in our individual lives and our world. Collaboration is
-            solution. I believe we as humans have one common goal, to continuously improve our
-            world so the future generation can live life a better life than those before them.
-            I aspire to provide education and connect liked minded individuals
-          </p>
+          <div>
+            <Subtitle>Mission</Subtitle>
+            <p>
+              There are complex problems in our individual lives and our world. Collaboration
+              is solution. I believe we as humans have one common goal, to continuously improve
+              our world so the future generation can live life a better life than those before
+              them. I aspire to provide education and connect liked minded individuals
+            </p>
+          </div>
         </div>
       </div>
     </Layout>
