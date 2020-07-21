@@ -1,0 +1,39 @@
+.root {
+  width: 45%;
+  min-width: 400px;
+  max-width: 500px;
+  margin: 3em;
+  
+  @media(max-width: 840px) {
+    margin: 0 auto;
+    
+  }
+}
+
+.image {
+  height: 35vh;
+  background-position: top 38% center;
+  background-size: cover;
+}
+
+.title {
+  margin: 0.8em 0;
+  font-family: 'Abril Fatface';
+  color: #2D2D2D;
+  font-size: 1.2em;
+}
+
+.desc {
+  font-family: 'Lato';
+  color: #2D2D2D;
+  margin: 0;
+}
+
+.divider {
+  content: '';
+  height: 0.1px;
+  width: 50%;
+  margin: 2em 0;
+  padding: 0;
+  background-color:#2D2D2D
+}

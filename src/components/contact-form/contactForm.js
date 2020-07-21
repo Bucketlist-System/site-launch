@@ -59,7 +59,7 @@ export default () => {
     // sending through xhr as axios won't work (CORS)
     const xhr = new XMLHttpRequest();
     xhr.open('POST', config.script);
-    // xhr.withCredentials = true
+    xhr.withCredentials = true;
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.onreadystatechange = function xhrGo() {
       setSent();
@@ -105,17 +105,6 @@ export default () => {
               required
             />
             <input
-              type='text'
-              name='organization'
-              autoComplete='no'
-              value={organization}
-              onChange={handleChange}
-              placeholder='Organization'
-              required
-            />
-          </div>
-          <div className={styles.double}>
-            <input
               type='email'
               name='email'
               autoComplete='no'
@@ -124,7 +113,27 @@ export default () => {
               placeholder='Email Address'
               required
             />
-            <input
+            {/* <input
+              type='text'
+              name='organization'
+              autoComplete='no'
+              value={organization}
+              onChange={handleChange}
+              placeholder='Organization'
+              required
+            /> */}
+          </div>
+          <div className={styles.double}>
+            {/* <input
+              type='email'
+              name='email'
+              autoComplete='no'
+              value={email}
+              onChange={handleChange}
+              placeholder='Email Address'
+              required
+            /> */}
+            {/* <input
               type='text'
               name='phone'
               autoComplete='no'
@@ -132,7 +141,7 @@ export default () => {
               onChange={handleChange}
               placeholder='Phone Number'
               required
-            />
+            /> */}
           </div>
           <div className={styles.email}>
             <input

@@ -10,11 +10,21 @@ const Education = () => {
   return (
     <Layout>
       <Hero image={'/images/education-kuma-kum.jpg'}></Hero>
-      <div className={styles.subNav}>
+      {/* <div className={styles.subNav}>
         <Subheader />
         <input type='text' placeholder={`Search`} />
-      </div>
-      <Container></Container>
+      </div> */}
+      <Container>
+        <div className={styles.podcast}>
+          <iframe
+            src='https://anchor.fm/ryan-morimoto/embed/episodes/001-The-1-Unstoppable-Force-to-Sustain-New-Habits-eg9fmj'
+            height='25%'
+            width='100%'
+            frameborder='0'
+            scrolling='no'
+          ></iframe>
+        </div>
+      </Container>
     </Layout>
   );
 };
