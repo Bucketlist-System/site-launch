@@ -13,6 +13,8 @@
     font-size: 1.15em;
     padding-top: 1em;
     line-height: 1.8em;
+    max-width: 1000px;
+    margin: 0 auto;
 
   }
 }
@@ -47,23 +49,25 @@
 
 .info {
   width: 50%;
-  height: 50vh;
-  padding: 2em;
+  padding: 4em 3em;
+  margin: auto 0;
   background-color: #F1EBE3;
   box-sizing: border-box;
   
   p {
     padding: 0 1em;
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.5em;
+    max-width: 600px;
+    margin: 0 auto;
   }
   
   @media(max-width: 840px) {
-    height: 50vh;
     width: 100%;
     
     p {
       padding: 0;
+      
     }
   }
 }

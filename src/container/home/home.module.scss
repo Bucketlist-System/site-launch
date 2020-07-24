@@ -1,6 +1,7 @@
 .content{
   text-align: center;
   font-family: 'Abril Fatface';
+  margin: 4rem;
   
   p {
     font-size: 1.4rem;
@@ -17,4 +18,19 @@
   padding-top: 1em;
   margin: 0 auto;
   margin-top: 1.5em;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto;
+  padding: 4rem 0;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+  max-width: 1200px;
+  
+  @media(max-width: 905px) {
+    display: flex;
+    flex-direction: column;
+  }
 }

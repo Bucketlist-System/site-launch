@@ -1,0 +1,30 @@
+.root {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  a {
+    font-family: 'Anonymous Pro';
+    font-size: 1em;
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    width: 6rem;
+    margin: 0 auto;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    transition: all 220ms ease-in-out;
+    border: none;
+    
+    &:hover {
+      transform: scale(1.05);
+      border: none;
+    }
+  }
+}
