@@ -12,17 +12,19 @@ const Contact = () => {
     <Layout>
       <Hero image='/images/contact.jpg'></Hero>
       <Container>
-        <div className={styles.wrapper}>
-          <h1 className={styles.heading}>Let's get in touch.</h1>
-          <p className={styles.faq}>
-            Read my{' '}
-            <Link href='/'>
-              <a>FAQ</a>
-            </Link>{' '}
-            page
-          </p>
+        <div className={styles.root}>
+          <div className={styles.wrapper}>
+            <h1 className={styles.heading}>Let's get in touch.</h1>
+            <p className={styles.faq}>
+              Read my{' '}
+              <Link href='/'>
+                <a>FAQ</a>
+              </Link>{' '}
+              page
+            </p>
+          </div>
+          <ContactForm />
         </div>
-        <ContactForm />
       </Container>
     </Layout>
   );

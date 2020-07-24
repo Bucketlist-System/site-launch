@@ -38,18 +38,18 @@ export default () => (
     </ul>
     <div className={styles.divider} />
     <ul className={styles.terms}>
-      <li>
+      {/* <li>
         <Link href='/'>
           <a>Press</a>
         </Link>
-      </li>
+      </li> */}
       <li>
         <Link href='/'>
           <a>Terms and Conditions</a>
         </Link>
       </li>
       <li>
-        <Link href='/'>
+        <Link href='/privacypolicy'>
           <a>Privacy Policy</a>
         </Link>
       </li>

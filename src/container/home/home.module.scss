@@ -27,8 +27,9 @@
   padding: 4rem 0;
   padding-bottom: 0;
   margin-bottom: 1rem;
+  max-width: 1200px;
   
-  @media(max-width: 1000px) {
+  @media(max-width: 905px) {
     display: flex;
     flex-direction: column;
   }

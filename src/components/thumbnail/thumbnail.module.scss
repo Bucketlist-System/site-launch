@@ -1,12 +1,12 @@
 .root {
   width: 45%;
-  min-width: 400px;
+  min-width: 300px;
   max-width: 500px;
-  margin: 3em;
+  margin: 2em auto;
   
-  @media(max-width: 840px) {
+  @media(max-width: 900px) {
     margin: 0 auto;
-    
+    width: 100%;
   }
 }
 
