@@ -3,7 +3,7 @@ import styles from './contactForm.module.scss';
 
 const config = {
   script:
-    'https://script.google.com/macros/s/AKfycbx9XF_VGYdZQoALe4UH3TFyyVMsbENMPMVwp7ZORg/exec',
+    'https://script.google.com/macros/s/AKfycbxe-nddNI31EXLhQ8y1O3PNEWhUnzNvqf2GNg3T/exec',
   sheet: 'Contact Form Responses',
   email: 'ryan.morimoto24@gmail.com',
 };
@@ -17,9 +17,7 @@ const Thanks = ({ name }) => (
 export default () => {
   const initialForm = {
     name: '',
-    organization: '',
     email: '',
-    phone: '',
     subject: '',
     message: '',
     honeypot: '',
@@ -27,7 +25,7 @@ export default () => {
 
   const [info, setInfo] = useState(initialForm);
 
-  const { name, organization, email, phone, subject, message, honeypot } = info;
+  const { name, email, subject, message, honeypot } = info;
 
   const initialState = {
     sent: false,
