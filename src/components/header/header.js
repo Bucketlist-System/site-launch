@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useState } from 'react';
 import Icon from '../icon';
 
 import styles from './header.module.scss';
@@ -40,13 +39,13 @@ const Header = ({ onHideNav, onShowNav, showNav }) => {
               </Link>
             </li>
             <li>
-              <Link href='/services'>
-                <a>Services</a>
+              <Link href='/faq'>
+                <a>FAQ</a>
               </Link>
             </li>
             <li>
-              <Link href='/education'>
-                <a>Education</a>
+              <Link href='/podcast'>
+                <a>Podcast</a>
               </Link>
             </li>
             {/* <li>

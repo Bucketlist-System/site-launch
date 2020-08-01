@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from '../header/header';
 import Footer from '../footer/footer';
+import Form from '../form/form';
 
 const Layout = ({ children }) => {
   const [showNav, setShowNav] = useState(false);
@@ -19,6 +20,7 @@ const Layout = ({ children }) => {
           background-color: #fff;
         `}</style>
       </div>
+      <Form />
       <Footer />
     </>
   );
