@@ -1,3 +1,5 @@
+import getConfig from 'next/config';
+
 import Layout from '../../components/layout/layout';
 import Container from '../../components/container/container';
 
@@ -10,10 +12,13 @@ import styles from './home.module.scss';
 
 import Quiz from '../../components/quiz/quiz';
 
+const { STATIC_CDN_URL } = getConfig().publicRuntimeConfig;
+const HeroImage = STATIC_CDN_URL + '/images/homepage/home-hero-min_1_1600x1400-min.jpg';
+
 const Home = () => {
   return (
     <Layout>
-      <Hero image='/images/home-hero.jpg' style={{ background: 'rgba(0, 0, 0, 0.15)' }}>
+      <Hero image={HeroImage} style={{ background: 'rgba(0, 0, 0, 0.15)' }}>
         <Title>Let's sustain a purposeful change in your life</Title>
       </Hero>
       <Container>

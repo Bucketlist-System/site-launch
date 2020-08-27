@@ -9,7 +9,7 @@ CONFIG_ENV !== 'test' && console.log('CONFIG_ENV', CONFIG_ENV);
 let defaultConfig = {
   publicRuntimeConfig: {
     BUILD_VERSION: process.env.BUILD_VERSION,
-    STATIC_CDN_URL: '',
+    STATIC_CDN_URL: 'https://rm-website-assets.s3-us-west-1.amazonaws.com',
   },
 };
 
